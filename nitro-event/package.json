@@ -4,13 +4,17 @@
     "build": "nitro build",
     "dev": "nitro dev",
     "prepare": "nitro prepare",
-    "preview": "node .output/server/index.mjs"
+    "preview": "node .output/server/index.mjs",
+    "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
     "nitropack": "latest"
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.16",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "eslint": "^8.46",
     "nodemailer": "^6.9.16"
   }
 }
