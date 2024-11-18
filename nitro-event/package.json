@@ -6,7 +6,8 @@
     "dev": "nitro dev",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --write '**/*.{js,ts}'"
   },
   "devDependencies": {
     "nitropack": "latest"
@@ -16,6 +17,7 @@
     "@typescript-eslint/eslint-plugin": "^5.45.1",
     "@typescript-eslint/parser": "^5.45.1",
     "eslint": "^8.46",
-    "nodemailer": "^6.9.16"
+    "nodemailer": "^6.9.16",
+    "prettier": "^3.0.1"
   }
 }
