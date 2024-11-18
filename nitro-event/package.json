@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "start": "node .output/server/index.mjs",
     "build": "nitro build",
     "dev": "nitro dev",
     "prepare": "nitro prepare",
