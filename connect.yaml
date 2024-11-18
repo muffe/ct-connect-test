@@ -1,28 +1,17 @@
 deployAs:
-  - name: event
+  - name: nitro-event
     applicationType: event
-    endpoint: /event
+    endpoint: /nitro-event
     scripts:
-      postDeploy: npm install && npm run build && npm run connector:post-deploy
-      preUndeploy: npm install && npm run build && npm run connector:pre-undeploy
+      postDeploy: pnpm install && pnpm run build
+      preUndeploy: pnpm install && pnpm run build
     configuration:
-      standardConfiguration:
-        - key: CTP_REGION
-          description: commercetools Composable Commerce API region
-          required: true
-          default: "europe-west1.gcp"
       securedConfiguration:
-        - key: CTP_PROJECT_KEY
-          description: commercetools Composable Commerce project key
+        - key: NITRO_EMAIL_USER
+          description: email user
           required: true
-        - key: CTP_CLIENT_ID
-          description: commercetools Composable Commerce client ID
-          required: true
-        - key: CTP_CLIENT_SECRET
-          description: commercetools Composable Commerce client secret
-          required: true
-        - key: CTP_SCOPE
-          description: commercetools Composable Commerce client scope
+        - key: NITRO_EMAIL_PASSWORD
+          description: email password
           required: true
 inheritAs:
   configuration:
