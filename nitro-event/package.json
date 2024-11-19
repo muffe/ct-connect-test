@@ -10,14 +10,14 @@
     "prettier": "prettier --write '**/*.{js,ts}'"
   },
   "devDependencies": {
-    "nitropack": "latest"
-  },
-  "dependencies": {
+    "nitropack": "latest",
     "@types/nodemailer": "^6.4.16",
     "@typescript-eslint/eslint-plugin": "^5.45.1",
     "@typescript-eslint/parser": "^5.45.1",
-    "eslint": "^8.46",
-    "nodemailer": "^6.9.16",
-    "prettier": "^3.0.1"
+    "prettier": "^3.0.1",
+    "eslint": "^8.46"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
   }
 }

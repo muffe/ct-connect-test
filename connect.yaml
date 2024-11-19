@@ -3,8 +3,8 @@ deployAs:
     applicationType: event
     endpoint: /nitro-event
     scripts:
-      postDeploy: pnpm install && pnpm run build
-      preUndeploy: pnpm install && pnpm run build
+      postDeploy: npm install && npm run build
+      preUndeploy: npm install && npm run build
     configuration:
       securedConfiguration:
         - key: NITRO_EMAIL_USER
